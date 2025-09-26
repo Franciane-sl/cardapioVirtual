@@ -28,3 +28,86 @@ body {
     background-color:#f9f9f9;
     color: #333;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #222;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+/*==============
+Cabeçalho e navegação
+===============*/
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav .logo img{
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ff6600;
+}
+
+/*========
+Banner
+==========*/
+
+#banner {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#banner figure{
+    position: relative;
+}
+
+#banner figcaption{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+
