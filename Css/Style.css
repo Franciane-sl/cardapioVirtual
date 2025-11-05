@@ -1,31 +1,28 @@
-/*======
-Reset de CSS
-======*/
-
-*{
+/* =====================
+   RESET DE CSS
+===================== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
 }
 
-html, body{
-    height: 100vh;
+html, body {
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
-    max-width: 100vh;
+img {
+    max-width: 100%;
     display: block;
 }
 
-/*======
-Estilos Globais
-====*/
-
+/* =====================
+   ESTILOS GLOBAIS
+===================== */
 body {
     line-height: 1.6;
-    background-color:#f9f9f9;
+    background-color: #f9f9f9;
     color: #333;
 }
 
@@ -38,19 +35,18 @@ ul {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     color: #222;
 }
 
-p{
+p {
     margin-bottom: 1rem;
 }
 
-/*==============
-Cabeçalho e navegação
-===============*/
-
-header{
+/* =====================
+   CABEÇALHO E NAVEGAÇÃO
+===================== */
+header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     position: sticky;
@@ -58,7 +54,7 @@ header{
     z-index: 1000;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,11 +63,11 @@ nav{
     padding: 1rem;
 }
 
-nav .logo img{
+nav .logo img {
     height: 50px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 1.5rem;
 }
@@ -81,24 +77,23 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #ff6600;
 }
 
-/*========
-Banner
-==========*/
-
+/* =====================
+   BANNER
+===================== */
 #banner {
     margin: 2rem 0;
     text-align: center;
 }
 
-#banner figure{
+#banner figure {
     position: relative;
 }
 
-#banner figcaption{
+#banner figcaption {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -110,11 +105,9 @@ Banner
     font-size: 1.2rem;
 }
 
-
-/*=======
-Destaques/ Cards dos pratos
-=======*/
-
+/* =====================
+   DESTAQUES / CARDS DE PRATOS
+===================== */
 #destaques {
     max-width: 1200px;
     margin: 2rem auto;
@@ -132,23 +125,24 @@ Destaques/ Cards dos pratos
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content:center;
+    justify-content: center;
 }
 
 #destaques article {
     background-color: #fff;
     border: 1px solid #ddd;
+    border-radius: 10px;
     overflow: hidden;
-    max-width:300px;
-    transition: transform 0.3s, box-shadow 0.3s
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #destaques article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);  
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-#destaques figure{
+#destaques figure {
     position: relative;
 }
 
@@ -158,11 +152,10 @@ Destaques/ Cards dos pratos
     text-align: center;
 }
 
-/*=======
-Seções Gerais
-=====*/
-
-section{
+/* =====================
+   SEÇÕES GERAIS
+===================== */
+section {
     padding: 2rem 1rem;
 }
 
@@ -170,71 +163,70 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-/*=====
-Rodapé
-====*/
-
+/* =====================
+   RODAPÉ
+===================== */
 footer {
-   background-color: #222;
-   color: #fff;
-   padding: 1.5rem 1rem;
-   text-align: center; 
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
 }
 
-footer ul{
+footer ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top:0.5rem;
+    margin-top: 0.5rem;
 }
 
 footer ul li a {
     color: #fff;
-    transition: color 0.3s
+    transition: color 0.3s;
 }
 
-footer ul li a:hover{
+footer ul li a:hover {
     color: #ff6600;
 }
 
-/*====
-Responsividade
-=====*/
+/* =====================
+   RESPONSIVIDADE
+===================== */
 
-/*Tablets*/
-@media(max-width: 992px) {
+/* Tablets */
+@media (max-width: 992px) {
     nav ul {
         gap: 1rem;
     }
 
-    #destaques.cards{
+    #destaques .cards {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-/*celulares*/
-@media(max-width: 768px){
-    nav{
-        flex-direction:column;
+/* Celulares */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
         align-items: flex-start;
     }
 
-    nav ul{
-        flex-direction;
-        width:100%;
+    nav ul {
+        flex-direction: column;
+        width: 100%;
         gap: 0.5rem;
         margin-top: 1rem;
     }
 
-    #destaques.cards{
+    #destaques .cards {
         flex-direction: column;
-        align-items:center;
-        gap:1.5rem;
+        align-items: center;
+        gap: 1.5rem;
     }
 
-    #banner figcaption{
+    #banner figcaption {
         font-size: 1rem;
         padding: 0.3rem 0.6rem;
     }

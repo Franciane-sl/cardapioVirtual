@@ -1,26 +1,28 @@
-/* estilo especifico para o index.html*/
+/* =====================
+   HOME.CSS - ESTILO ESPECÍFICO PARA INDEX.HTML
+===================== */
 
-/*banner principal*/
-#banner{
+/* Banner principal */
+#banner {
     margin: 2rem 0;
-    text-align:center;
-    position:relative;
+    text-align: center;
+    position: relative;
 }
 
-#banner img{
+#banner img {
     width: 100%;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
-#banner figcaption{
-    position:absolute;
-    bottom:20px;
+#banner figcaption {
+    position: absolute;
+    bottom: 20px;
     left: 50%;
-    transform: tranlateX(-50%);
+    transform: translateX(-50%);
     color: #fff;
-    background-color: rgba(0,0,0,0.6);
-    padding:0.5rem;
-    border-radius:5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     font-size: 1.5rem;
-    font-weight:bold;
+    font-weight: bold;
 }
