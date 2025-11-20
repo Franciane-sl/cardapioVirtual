@@ -6,6 +6,7 @@
     <title>Cardápio - Menu</title>
     <!--CSS Global -->
     <link rel="stylesheet" href="../Css/Style.css">
+    <link rel="stylesheet" href="../Css/Menu.css">
 </head>
 <body>
     <!--Cabeçalho-->
@@ -16,9 +17,10 @@
                     <img src="data:image/png;base64,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" alt="Logo do Restaurante">
                 </a>
             </div>
-            <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="Menu.html"></a></li>
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -31,6 +33,7 @@
     </section>
      <!-- Seção de entradas -->
     <section id="entradas">
+        <h2>Entradas</h2>
         <div class="cards">
             <article>
                 <figure>
@@ -46,10 +49,59 @@
                 </figure>
                 <p>Tomate, mozzarella e manjericão fresco com molho especial</p>
             </article>
-
         </div>
-
     </section>
-    
+
+    <!--Seção pratos principais-->
+    <section id="pratos-principais">
+        <h2>Pratos Principais</h2>
+        <div class="cards">
+            <article>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLSfrVpl7G8H6uNkRv34qqcZbDP_tzLysUg&s" alt="Prato 2">
+                    <figcaption>Pizza Margherita</figcaption>
+                </figure>
+                <p>Massa fina, molho de tomate fresco e queijo mozzarella.</p>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnu_bOIMbU1QSsDF1kD-_aU-K1tjSbzjCGQ&s" alt="Lasanha á Bolonhesa">
+                    <figcaption>Lasanha á Bolonhesa</figcaption>
+                    <p>Lasanha com molho de carne, queijo e molho bechamel.</p>
+                </figure>
+        </div>
+    </section>
+
+<!--Seção de Sobremesas-->
+
+<section id="sobremesas">
+    <h2>Sobremesas</h2>
+    <div class="cards">
+         <article>
+                <figure>
+                    <img src="https://msabores.com/wp-content/uploads/2025/05/Design-sem-nome-4.webp" alt="Prato 3">
+                    <figcaption>Bolo de Chocolate</figcaption>
+                </figure>
+                <p>Bolo fofinho com cobertura de chocolate meio amargo.</p>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxgr0vxUWGJvw8nbogJhVn01qd3-O3MuYlxw&s" alt="Pudim de Leite">
+                    <figcaption>Pudim de Leite</figcaption>
+                </figure>
+                <p>Pudim cremoso tradicionak com calda caramelizada</p>
+            </article>
+    </div>
+</section>
+
+<!--Rodapé-->
+ <footer>
+        <p>&copy; 2025 Cardápio Virtual. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+        </ul>
+    </footer>  
 </body>
 </html>
